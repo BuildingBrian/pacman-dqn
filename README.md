@@ -117,8 +117,8 @@ Source files: [`training_summary.json`](results/training_summary.json) · [`conf
 [`training.csv`](results/training.csv) (one row per completed game).
 
 The elapsed time is the notebook's own measurement, a monotonic clock that stops while the Mac sleeps. On the wall clock
-the run went from 12:51 PM to 2:42 PM PDT because the laptop lid was closed twice for about 31 minutes in total; the
-process was paused and resumed, which does not change any result.
+the run went from 12:51 PM to 2:42 PM PDT: the laptop lid was closed twice and the process sat paused for about
+31 minutes in total, then resumed, which does not change any result.
 
 ### The five before-and-after scores
 
@@ -144,7 +144,7 @@ Full evaluation record with game lengths: [`comparison.json`](results/comparison
 **Reading the three panels.** *Left:* single training games (light blue) swing between about 100 and 2,910 points;
 the 25-game average (orange) jumps from 130 after the first, fully random game into the 600–900 band within 25 games and
 then stays there. The first quarter of training averaged 705 points per game and the last quarter 739, with the best
-25-game average (about 890) around game 330 and the two best single games at game 72 (2,640) and game 448 (2,910). So
+25-game average (912) at game 328 and the two best single games at game 70 (2,640) and game 448 (2,910). So
 most of the measurable learning happened early; after that the agent oscillated rather than climbed. *Middle:* the mean
 update loss did **not** fall. It rose from 0.024 in game 2 to a peak of 0.200 at game 355 and settled around 0.10–0.12.
 That is not by itself a failure: the loss measures the gap between the network's guess and a target built from its own
@@ -237,7 +237,7 @@ exactly as they were.** The failure I observed was forgetting, not slowness: the
 games and then cycled, and the every-25-game checkpoints behaved like different agents. A ten-times-larger memory (about
 1.7 GB of pixels, which fits in this laptop's 32 GB) would let each batch of 32 mix experiences from roughly 80 games
 instead of 8, which is the mechanism the DQN paper relies on to stabilize learning. My prediction: the 25-game average
-should keep rising past the ~890 ceiling instead of oscillating around 700, the seed-101 checkpoint scores should stop
+should keep rising past the 912 ceiling instead of oscillating around 700, the seed-101 checkpoint scores should stop
 swinging by a factor of five, and trained games should finally get *longer* than untrained ones. Of the three student
 choices, I would leave all three alone for that run: more episodes with the same small memory would mostly repeat the
 same cycle, and exploration and learning rate are hard to judge until the memory stops erasing what they produce. If the

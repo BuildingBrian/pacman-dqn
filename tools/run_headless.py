@@ -60,6 +60,8 @@ def main():
             timer.daemon = True
             timer.start()
             print(f"Safety deadline armed for {fire_at:%Y-%m-%d %H:%M} ({wait / 3600:.1f} h from now).", flush=True)
+        else:
+            print(f"WARNING: --deadline {args.deadline} is already in the past today; no safety interrupt armed.", flush=True)
     try:
         client.execute()
     finally:
