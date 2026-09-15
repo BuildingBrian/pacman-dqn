@@ -249,7 +249,7 @@ larger memory works, the run after that would be 1,500–2,000 episodes overnigh
 
 | Evidence | Where |
 |---|---|
-| Executed notebook with all outputs from the final run | [`pacman_dqn.ipynb`](pacman_dqn.ipynb) |
+| Executed notebook with all outputs from the final run | [`pacman_dqn.ipynb`](pacman_dqn.ipynb) | GitHub's notebook preview renders the printed scores and the dashboard PNG, but shows GIF outputs as `<IPython.core.display.Image object>`; the same GIFs are embedded above from `results/demos/` and render in Jupyter or Colab. |
 | Settings, hardware, package versions | [`results/config.json`](results/config.json) |
 | One row per completed training game | [`results/training.csv`](results/training.csv) |
 | Completed episodes, decisions, learning updates, elapsed time, status | [`results/training_summary.json`](results/training_summary.json) |
