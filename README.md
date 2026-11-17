@@ -1,3 +1,7 @@
+<div align="center">
+  <a href="https://github.com/BuildingBrian"><img src=".github/arcade/banner.svg" width="100%" alt="pacman-dqn: Deep Q-Network versus Ms. Pac-Man. A BuildingBrian project."></a>
+</div>
+
 # Ms. Pac-Man DQN — Class 3 assignment
 
 **Brian Arevalo Ramos · MBA 290T Fundamentals of Agentic AI · Class 3 / Assignment 2**
@@ -275,3 +279,12 @@ checkpoint every 25 games. They are gitignored (each is about 6.4 MB) and kept l
 - [ALE installation and Gymnasium registration](https://ale.farama.org/getting-started/)
 - [Gymnasium Atari preprocessing](https://gymnasium.farama.org/api/wrappers/misc_wrappers/#gymnasium.wrappers.AtariPreprocessing)
 - [Gymnasium frame stacking](https://gymnasium.farama.org/api/wrappers/observation_wrappers/#gymnasium.wrappers.FrameStackObservation)
+
+<p align="center">
+  <a href="https://github.com/BuildingBrian"><img src=".github/arcade/btn-stages.svg" alt="Back to stage select: github.com/BuildingBrian"></a>
+  <a href="https://buildingbrian.github.io/BuildingBrian/"><img src=".github/arcade/btn-play.svg" alt="Play Vapor Strike, the arcade game behind the profile"></a>
+</p>
+
+<div align="center">
+  <a href="https://github.com/BuildingBrian"><img src=".github/arcade/footer.svg" width="100%" alt="Thank you for playing. A BuildingBrian project."></a>
+</div>
